@@ -1,86 +1,95 @@
-# Crear README.md con la estructura solicitada por el usuario
+# Versión completa del README en inglés, con estilo claro y profesional
 
-readme_content = """
-# 🧠 8bit-CPU from Scratch
-**Inspirado en el ordenador de Ben Eater – construido desde cero con aprendizaje y errores incluidos.**
-
----
-
-## 📋 Tabla de Contenidos
-
-1. [Motivación](#motivación)  
-2. [Fases del Proyecto](#fases-del-proyecto)  
-3. [Errores y Decisiones](#errores-y-decisiones)  
-4. [Capítulos Técnicos](#capítulos-técnicos)  
-5. [Qué aprendí](#qué-aprendí)  
-6. [Cómo ejecutarlo / usarlo](#cómo-ejecutarlo--usarlo)
+readme_english = """
+# 🧠 8-bit CPU from Scratch
+**Inspired by Ben Eater’s 8-bit computer, built from the ground up with curiosity, mistakes, and learning along the way.**
 
 ---
 
-## 💡 Motivación
+## 📋 Table of Contents
 
-Este proyecto nace de mi interés por entender cómo funciona un ordenador a bajo nivel. En lugar de solo ver vídeos, decidí replicarlo desde cero, con mis propias pruebas, errores, mejoras y documentación.
-
----
-
-## 🔨 Fases del Proyecto
-
-1. **Diseño y planificación.**  
-2. **Construcción física (placa/breadboard).**  
-3. **Programación de la EEPROM.**  
-4. **Creación del microcódigo.**  
-5. **Añadir nuevas instrucciones.**  
-6. **Debugging y mejora.**
+1. [💡 Motivation](#💡-motivation)  
+2. [🔨 Project Phases](#🔨-project-phases)  
+3. [🐞 Errors & Decisions](#🐞-errors--decisions)  
+4. [🧩 Technical Chapters](#🧩-technical-chapters)  
+5. [🎓 What I Learned](#🎓-what-i-learned)  
+6. [▶️ How to Use / Run It](#▶️-how-to-use--run-it)
 
 ---
 
-## 🐞 Errores y Decisiones
+## 💡 Motivation
 
-Durante el proceso me encontré con varios errores que me ayudaron a entender mejor el funcionamiento interno. Aquí algunos ejemplos:
+I wanted to take on a challenging project that would push me to truly learn electronics, not just in theory, but by getting hands-on with real components. At the same time, I was curious to deeply understand one of the most fundamental processes behind everything we interact with daily: low-level computer processing.
 
-- ❌ Dirección mal cableada en el bus → solución: reorganizar pines.  
-- 🔁 Instrucción que no hacía halt correctamente → revisión del microcódigo.  
-- 💡 Decisión: cambiar el orden de ejecución de instrucciones para facilitar el debugging.
+Even though we don’t deal with it directly, every app, video, or piece of software we use relies on that invisible layer of computation happening behind the scenes. Gaining a real grasp of how that works was my goal.
+
+During my search, I came across a well-known figure on the internet: **Ben Eater**. His step-by-step videos on how to build an 8-bit computer from scratch were the perfect starting point. I decided to follow his guidance, replicate the machine, and document my process, not just to copy it, but to truly understand, modify, and build upon it.
 
 ---
 
-## 🧩 Capítulos Técnicos
+## 🔨 Project Phases
+
+1. **Design and planning**  
+2. **Physical construction (breadboard setup)**  
+3. **EEPROM programming**  
+4. **Microcode development**  
+5. **Custom instruction implementation**  
+6. **Debugging and iteration**
+
+---
+
+## 🐞 Errors & Decisions
+
+I ran into a lot of errors during this project. Honestly, way more than I would’ve liked. A lot. And when I say a lot, I mean a lot.
+
+One of the biggest challenges was dealing with voltage spikes, those sudden jumps that happen when pressing buttons or switching RAM chips. I also had issues with the power supply voltage. All of the chips I used are TTL logic, which are supposed to work at a specific voltage range. But at higher voltages, spikes become more frequent, and they can completely throw off the logic, making the circuit behave unexpectedly.
+
+To deal with this, I had to add lots of capacitors to smooth out signals and reduce noise. I also used RC filters to stabilize things.
+
+There were also programming issues with the EEPROM, accidental component damage, bad wiring, and pretty much every kind of mistake you can think of.
+
+But here’s the thing: none of that really matters — what matters is that every mistake taught me something, and eventually, I was able to fix it. That’s what this project is about.
+
+---
+
+## 🧩 Technical Chapters
 
 ### 1️⃣ EEPROM
 
-Explicación de cómo programé la EEPROM, qué tabla de verdad usé, y cómo depuré errores en la escritura.
+Details on how I programmed the EEPROM, designed the truth table, and fixed issues with miswritten data.
 
 ### 2️⃣ Microcode
 
-Creación del microcódigo, estructura del ciclo de instrucción, uso de flags y fases del ciclo de fetch-decode-execute.
+How I structured the micro-instructions, managed control lines, and handled fetch/decode/execute phases.
 
-### 3️⃣ Instrucciones nuevas
+### 3️⃣ New Instructions
 
-Añadí instrucciones como `NOP`, `INC`, o `JNZ`. Aquí explico cómo las diseñé y qué efectos tienen.
+I added custom instructions like `NOP`, `INC`, and `JNZ`. Here I explain their design and how they behave in execution.
 
-*(Puedes añadir aquí capturas, gifs, esquemas, etc.)*
-
----
-
-## 🎓 Qué aprendí
-
-- Cómo se comunica un bus de datos.  
-- El rol de los registros y la ALU.  
-- Diseño de instrucciones y control mediante microcódigo.  
-- Lo valioso del **debugging** como proceso de aprendizaje.
+*(You can include screenshots, diagrams, or short GIFs here.)*
 
 ---
 
-## ▶️ Cómo ejecutarlo / usarlo
+## 🎓 What I Learned
 
-(Si es físico, pon fotos o vídeos; si es en simulador como Logisim, puedes poner cómo abrirlo y correrlo)
+- How data moves across a shared bus  
+- The role of registers, the ALU, and control logic  
+- How to design instruction sets and build a functioning microarchitecture  
+- That **debugging is a learning tool**, not just a problem to fix
+
+---
+
+## ▶️ How to Use / Run It
+
+If you're using physical hardware, include photos or wiring instructions.  
+If you're using a simulator (like Logisim), explain how to open and run the project.
 
 ---
 """
 
-# Guardar archivo
-readme_path = "/mnt/data/README.md"
-with open(readme_path, "w", encoding="utf-8") as f:
-    f.write(readme_content)
+# Guardar el README traducido al inglés
+english_readme_path = "/mnt/data/README_ENGLISH.md"
+with open(english_readme_path, "w", encoding="utf-8") as f:
+    f.write(readme_english)
 
-readme_path
+english_readme_path
