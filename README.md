@@ -51,19 +51,35 @@ But here’s the thing: none of that really matters, what matters is that every 
 
 ## 🧩 Technical Chapters
 
-### 1️⃣ EEPROM
-![My RAM setup](ruta/de/tu/imagen.jpg)
-Details on how I programmed the EEPROM, designed the truth table, and fixed issues with miswritten data.
+### 1️⃣ RAM
+
+![RAM module testing](Images/Ram_module_testing.jpeg)
+
+This image shows the RAM module during testing. I had to deal with noisy signals and used RC filters and capacitors to stabilize it. This was one of the most sensitive parts due to voltage spikes and data instability.
+
+---
 
 ### 2️⃣ Microcode
 
-How I structured the micro-instructions, managed control lines, and handled fetch/decode/execute phases.
+![Register module / Microcode area](Images/Register_module_testing.jpeg)
 
-### 3️⃣ New Instructions
+This image reflects part of the register and control section involved in microcode execution. I structured the micro-instructions to manage control lines and ensured the fetch-decode-execute cycle was handled correctly, including adding custom instructions.
 
-I added custom instructions like `NOP`, `INC`, and `JNZ`. Here I explain their design and how they behave in execution.
+---
 
-*(You can include screenshots, diagrams, or short GIFs here.)*
+### 3️⃣ ALU
+
+![ALU module wiring](Images/Alu_module_wiring.jpeg)
+
+This is the ALU (Arithmetic Logic Unit) section. It was critical for operations like addition, subtraction, and logical comparisons. Here I learned a lot about binary arithmetic and how to combine logic gates for operations.
+
+---
+
+### 4️⃣ New Instructions
+
+I added custom instructions like `NOP`, `INC`, and `JNZ`. These were manually programmed into the EEPROM and supported by microcode logic. For instance, `INC` increments the accumulator, and `JNZ` allows conditional jumps based on flags.
+
+*(You can include more screenshots or animations here to show the instructions in action.)*
 
 ---
 
