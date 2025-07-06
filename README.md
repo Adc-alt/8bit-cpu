@@ -97,7 +97,7 @@ Voltage spikes can cause false signals and unstable logic. I saw firsthand how R
 I gained a solid understanding of how a computer works at the lowest level: fetching an instruction from memory, decoding it, activating the appropriate control lines, and finally performing the operation to produce a result.
 
 
-##🎥 Demo Video Summary
+## 🎥 Demo Video Summary
 You can watch a 3-part video demo of the project on LinkedIn.
 
 Here’s a brief summary of each part:
