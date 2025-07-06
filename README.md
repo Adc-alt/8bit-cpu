@@ -1,6 +1,3 @@
-# Versión completa del README en inglés, con estilo claro y profesional
-
-readme_english = """
 # 🧠 8-bit CPU from Scratch
 **Inspired by Ben Eater’s 8-bit computer, built from the ground up with curiosity, mistakes, and learning along the way.**
 
@@ -48,14 +45,14 @@ To deal with this, I had to add lots of capacitors to smooth out signals and red
 
 There were also programming issues with the EEPROM, accidental component damage, bad wiring, and pretty much every kind of mistake you can think of.
 
-But here’s the thing: none of that really matters — what matters is that every mistake taught me something, and eventually, I was able to fix it. That’s what this project is about.
+But here’s the thing: none of that really matters, what matters is that every mistake taught me something, and eventually, I was able to fix it. That’s what this project is about.
 
 ---
 
 ## 🧩 Technical Chapters
 
 ### 1️⃣ EEPROM
-
+![My RAM setup](ruta/de/tu/imagen.jpg)
 Details on how I programmed the EEPROM, designed the truth table, and fixed issues with miswritten data.
 
 ### 2️⃣ Microcode
