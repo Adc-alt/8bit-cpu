@@ -51,7 +51,7 @@ But here’s the thing: none of that really matters, what matters is that every 
 
 ---
 
-## 🧩 Technical Chapters
+## 🧩 Technical Chapters (Some photos)
 
 ### 1️⃣ RAM
 ![RAM module testing](Ram_module_testing.jpeg)
@@ -66,7 +66,7 @@ This image shows the RAM module during testing. I had to deal with noisy signals
 
 ![Register module testing](Register_module_testing.jpeg)
 
-This image reflects part of the register and control section involved in microcode execution. I structured the micro-instructions to manage control lines and ensured the fetch-decode-execute cycle was handled correctly, including adding custom instructions.
+This image reflects part of the register.
 
 ---
 
