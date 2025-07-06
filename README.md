@@ -78,20 +78,24 @@ This is the ALU (Arithmetic Logic Unit) section. It was critical for operations 
 
 ---
 
-### 4️⃣ New Instructions
-
-I added custom instructions like `NOP`, `INC`, and `JNZ`. These were manually programmed into the EEPROM and supported by microcode logic. For instance, `INC` increments the accumulator, and `JNZ` allows conditional jumps based on flags.
-
-*(You can include more screenshots or animations here to show the instructions in action.)*
-
----
 
 ## 🎓 What I Learned
 
-- How data moves across a shared bus  
-- The role of registers, the ALU, and control logic  
-- How to design instruction sets and build a functioning microarchitecture  
-- That **debugging is a learning tool**, not just a problem to fix
+🔌 Reverse polarity matters.
+I learned that reverse polarity can destroy components — either by damaging internal transistors, diodes, or by allowing current to flow in the wrong direction. In this particular build, I didn’t implement protection for it, but it’s definitely something to consider in future designs.
+
+⚡ How TTL logic works.
+I now understand the precise voltage thresholds that define a 0 or a 1 in TTL logic. I also learned why TTL was eventually replaced by CMOS, which is far more power-efficient. At peak load, my computer was drawing up to 1.5A — though that’s partly because of all the LEDs I added.
+
+📖 Datasheets are your best friend.
+I learned to study datasheets carefully and thoroughly. They’re not just optional—they’re your final authority. You can honestly learn a ton just by reading Texas Instruments datasheets in depth.
+
+🧰 The value of RC filters and decoupling capacitors.
+Voltage spikes can cause false signals and unstable logic. I saw firsthand how RC filters and capacitors can smooth out those glitches and help keep the circuit stable.
+
+🧠 Low-level computer architecture.
+I gained a solid understanding of how a computer works at the lowest level: fetching an instruction from memory, decoding it, activating the appropriate control lines, and finally performing the operation to produce a result.
+
 
 ---
 
@@ -101,11 +105,3 @@ If you're using physical hardware, include photos or wiring instructions.
 If you're using a simulator (like Logisim), explain how to open and run the project.
 
 ---
-"""
-
-# Guardar el README traducido al inglés
-english_readme_path = "/mnt/data/README_ENGLISH.md"
-with open(english_readme_path, "w", encoding="utf-8") as f:
-    f.write(readme_english)
-
-english_readme_path
