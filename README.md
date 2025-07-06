@@ -52,8 +52,9 @@ But here’s the thing: none of that really matters, what matters is that every 
 ## 🧩 Technical Chapters
 
 ### 1️⃣ RAM
+![RAM module testing](Ram_module_testing.jpeg)
 
-![RAM module testing](Images/Ram_module_testing.jpeg)
+
 
 This image shows the RAM module during testing. I had to deal with noisy signals and used RC filters and capacitors to stabilize it. This was one of the most sensitive parts due to voltage spikes and data instability.
 
