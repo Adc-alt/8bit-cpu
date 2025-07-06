@@ -1,6 +1,8 @@
 # 🧠 8-bit CPU from Scratch
 **Inspired by Ben Eater’s 8-bit computer, built from the ground up with curiosity, mistakes, and learning along the way.**
 
+![8bits_computer](8bits_image.jpeg)
+
 ---
 
 ## 📋 Table of Contents
@@ -60,17 +62,17 @@ This image shows the RAM module during testing. I had to deal with noisy signals
 
 ---
 
-### 2️⃣ Microcode
+### 2️⃣ REGISTER
 
-![Register module / Microcode area](Images/Register_module_testing.jpeg)
+![Register module testing](Register_module_testing.jpeg)
 
 This image reflects part of the register and control section involved in microcode execution. I structured the micro-instructions to manage control lines and ensured the fetch-decode-execute cycle was handled correctly, including adding custom instructions.
 
 ---
 
 ### 3️⃣ ALU
+![ALU module wiring](Alu_module_wiring.jpeg)
 
-![ALU module wiring](Images/Alu_module_wiring.jpeg)
 
 This is the ALU (Arithmetic Logic Unit) section. It was critical for operations like addition, subtraction, and logical comparisons. Here I learned a lot about binary arithmetic and how to combine logic gates for operations.
 
