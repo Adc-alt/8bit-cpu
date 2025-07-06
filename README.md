@@ -82,10 +82,10 @@ This is the ALU (Arithmetic Logic Unit) section. It was critical for operations 
 ## 🎓 What I Learned
 
 🔌 Reverse polarity matters.
-I learned that reverse polarity can destroy components — either by damaging internal transistors, diodes, or by allowing current to flow in the wrong direction. In this particular build, I didn’t implement protection for it, but it’s definitely something to consider in future designs.
+I learned that reverse polarity can destroy components, either by damaging internal transistors, diodes, or by allowing current to flow in the wrong direction. In this particular build, I didn’t implement protection for it, but it’s definitely something to consider in future designs.
 
 ⚡ How TTL logic works.
-I now understand the precise voltage thresholds that define a 0 or a 1 in TTL logic. I also learned why TTL was eventually replaced by CMOS, which is far more power-efficient. At peak load, my computer was drawing up to 1.5A — though that’s partly because of all the LEDs I added.
+I now understand the precise voltage thresholds that define a 0 or a 1 in TTL logic. I also learned why TTL was eventually replaced by CMOS, which is far more power-efficient. At peak load, my computer was drawing up to 1.5A , though that’s partly because of all the LEDs I added.
 
 📖 Datasheets are your best friend.
 I learned to study datasheets carefully and thoroughly. They’re not just optional—they’re your final authority. You can honestly learn a ton just by reading Texas Instruments datasheets in depth.
@@ -97,11 +97,20 @@ Voltage spikes can cause false signals and unstable logic. I saw firsthand how R
 I gained a solid understanding of how a computer works at the lowest level: fetching an instruction from memory, decoding it, activating the appropriate control lines, and finally performing the operation to produce a result.
 
 
----
+🎥 Demo Video Summary
+You can watch a 3-part video demo of the project on LinkedIn.
 
-## ▶️ How to Use / Run It
+Here’s a brief summary of each part:
 
-If you're using physical hardware, include photos or wiring instructions.  
-If you're using a simulator (like Logisim), explain how to open and run the project.
+🧠 Part 1 – Human CPU Mode
+In the first clip, the CPU wasn’t fully built yet — so I acted as the CPU myself. I manually toggled the control lines: first loading a 1 into Register A, then a 1 into Register B, and finally triggering the sum via the ALU. Then I inverted the ALU signal to perform a subtraction instead of an addition (2 -).
 
----
+⚙️ Part 2 – Programmed Addition
+The second video shows the CPU performing an addition fully on its own, programmed via the EEPROM. Register A loads the value 28, Register B gets 41, and the result 69 is shown. Everything happens at a slow clock speed so you can clearly see the operation step-by-step.
+
+💻 Part 3 – It Becomes a Real Computer
+In the final video, the system reaches a key milestone: it becomes Turing Complete. As defined by the father of computer science, a machine is considered a computer when it supports conditional jumps — and that’s exactly what’s shown here.
+
+The program sums +15 repeatedly. Once an overflow occurs and the max value is reached, a conditional jump is triggered and the system switches to subtraction mode — all based on the program logic.
+
+
