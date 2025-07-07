@@ -120,7 +120,7 @@ I'm going to try my best to explain how a computer works. It’s mostly logic an
 
 To keep things simple, I’m including an image of Ben Eater’s computer, it’s much cleaner and easier to follow than mine. The image is just there to help you build a mental picture and follow along as you read. You don’t need to understand the circuits themselves, in fact, it’s probably best if you just focus on the labeled parts and don’t get too caught up in the rest.
 
-![Ben Eater Computer](BenEaterCoputer.jpeg)
+![Ben Eater Coputer](BenEaterCoputer.jpeg)
 
 The explanation you're about to read is just an introduction, it doesn’t dive deep into the technical stuff, but if you read it a couple of times, you'll get the general idea. In fact, you’ll probably be able to explain it to someone else afterwards.
 
@@ -157,8 +157,7 @@ This binary instruction gets stored in RAM as part of the program. But here’s 
 Before running the program, you flip a set of red switches on the RAM module to insert the value 28 at address 14.
 
 Here
-![Ben Eater Computer](RamSwitch.jpeg)
-
+![RamSwitch](RamSwitch.jpeg)
 
 Address 14 in binary is 1110
 Value 28 in binary is 00011100
