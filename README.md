@@ -209,9 +209,13 @@ And just like that, Register A now holds the number 28.
 So even though we started with just a simple instruction — LOAD 14 — what really happened was a beautiful chain of coordination:
 
 1-You preloaded the RAM with a value at a specific address
+
 2-The CPU fetched and decoded the instruction
+
 3-The EEPROM mapped the opcode to control signals
+
 4-The system fetched the data and stored it in Register A
+
 5-All of this took place across multiple clock cycles (T0–T4 in this case)
 
 
