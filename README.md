@@ -17,7 +17,7 @@
 
 ---
 
-## 💡 1.Motivation
+## 💡 1. Motivation
 
 I wanted to take on a challenging project that would push me to truly learn electronics, not just in theory, but by getting hands-on with real components. At the same time, I was curious to deeply understand one of the most fundamental processes behind everything we interact with daily: low-level computer processing.
 
@@ -27,7 +27,7 @@ During my search, I came across a well-known figure on the internet: **Ben Eater
 
 ---
 
-## 🔨 2.Project Phases
+## 🔨 2. Project Phases
 
 1. **Design and planning**  
 2. **Physical construction (breadboard setup)**  
@@ -38,7 +38,7 @@ During my search, I came across a well-known figure on the internet: **Ben Eater
 
 ---
 
-## 🐞 3.Errors & Decisions
+## 🐞 3. Errors & Decisions
 
 I ran into a lot of errors during this project. Honestly, way more than I would’ve liked. A lot. And when I say a lot, I mean a lot.
 
@@ -80,7 +80,7 @@ This is the ALU (Arithmetic Logic Unit) section. It was critical for operations 
 ---
 
 
-## 🎓 5.What I Learned
+## 🎓 5. What I Learned
 
 🔌 Reverse polarity matters.
 I learned that reverse polarity can destroy components, either by damaging internal transistors, diodes, or by allowing current to flow in the wrong direction. In this particular build, I didn’t implement protection for it, but it’s definitely something to consider in future designs.
@@ -98,7 +98,7 @@ Voltage spikes can cause false signals and unstable logic. I saw firsthand how R
 I gained a solid understanding of how a computer works at the lowest level: fetching an instruction from memory, decoding it, activating the appropriate control lines, and finally performing the operation to produce a result.
 
 
-## 🎥 6.Demo Video Summary
+## 🎥 6. Demo Video Summary
 You can watch a 3-part video demo of the project on LinkedIn.
 
 Here’s a brief summary of each part:
@@ -115,7 +115,7 @@ In the final video, the system reaches a key milestone: it becomes Turing Comple
 The program sums +15 repeatedly. Once an overflow occurs and the max value is reached, a conditional jump is triggered and the system switches to subtraction mode, all based on the program logic.
 
 
-## 7.Into The Rabbit Hole
+## 7. Into The Rabbit Hole
 
 I'm going to try my best to explain how a computer works. It’s mostly logic and a bunch of 0s and 1s, but my goal is that after reading this, you'll at least get the gist of it. It’s not that hard, but it can definitely get confusing.
 
