@@ -163,9 +163,13 @@ Address 14 in binary is 1110
 Value 28 in binary is 00011100
 
 So you:
+
 -Set the address lines to 1110
+
 -Set the data lines to 00011100
+
 -Hit the “Write” switch on the RAM
+
 Now, RAM address 14 holds the number 28. It’s there, waiting to be fetched.
 
 
