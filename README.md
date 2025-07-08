@@ -125,7 +125,7 @@ To keep things simple, I’m including an image of Ben Eater’s computer, it’
 
 The explanation you're about to read is just an introduction, it doesn’t dive deep into the technical stuff, but if you read it a couple of times, you'll get the general idea. In fact, you’ll probably be able to explain it to someone else afterwards.
 
-As Lex Fridman says, that’s actually one of the best ways to make things stick.
+As Feynman says, that’s actually one of the best ways to make things stick.
 
 Imagine the computer as a factory,  with workers (the registers), a conveyor belt (the bus), and a boss who gives out instructions from the EEPROM. The clock (CLK) sets the pace, ticking like a metronome so that every part of the system moves in perfect sync. The instructions, like a daily to-do list, are stored in RAM, and the boss (the EEPROM) knows exactly what signals to send for each task to be completed step by step.
 
