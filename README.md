@@ -201,6 +201,7 @@ In the LOAD execution step:
 The RAM is enabled at address 14
 
 -The value 28 (00011100) is placed on the bus
+
 -The A Register is enabled to receive it
 
 And just like that, Register A now holds the number 28.
