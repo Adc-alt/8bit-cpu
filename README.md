@@ -147,6 +147,7 @@ But the instruction isn’t written like that ,because remember, the computer do
 This 8-bit instruction is split in two:
 
 -0001 → the opcode → tells the CPU to perform a LOAD
+
 -1110 → the operand → tells the CPU to go to RAM address 14
 
 0001 1110  =  LOAD from RAM[14]
@@ -164,9 +165,11 @@ Value 28 in binary is 00011100
 
 So you:
 
--→Set the address lines to 1110.
--→Set the data lines to 00011100.
--→Hit the “Write” switch on the RAM.
+-Set the address lines to 1110.
+
+-Set the data lines to 00011100.
+
+-Hit the “Write” switch on the RAM.
 
 Now, RAM address 14 holds the number 28. It’s there, waiting to be fetched.
 
@@ -176,8 +179,9 @@ Now the program starts running. The Program Counter at first start in 0000 but o
 
 The CPU fetches it and places it into the Instruction Register , an 8-bit register that splits it into:
 
---Opcode:  0001 → which tells the EEPROM to trigger the LOAD microcode
---Operand: 1110 → which tells the RAM which address to read from
+-Opcode:  0001 → which tells the EEPROM to trigger the LOAD microcode
+
+-Operand: 1110 → which tells the RAM which address to read from
 
 ### 4️⃣ What the EEPROM Does
 Inside the EEPROM, you’ve manually written the microcode that corresponds to LOAD.
