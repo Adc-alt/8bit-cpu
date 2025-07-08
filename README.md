@@ -104,7 +104,7 @@ You can watch a 3-part video demo of the project on LinkedIn.
 Here’s a brief summary of each part:
 
 🧠 Part 1 – Human CPU Mode
-In the first clip, the CPU wasn’t fully built yet , so I acted as the CPU myself. I manually toggled the control lines: first loading a 1 into Register A, then a 1 into Register B, and finally triggering the sum via the ALU. Then I inverted the ALU signal to perform a subtraction instead of an addition (2 -).
+In the first clip, the CPU wasn’t fully built yet , so I acted as the CPU myself. I manually toggled the control lines: first loading a 1 into Register A, then a 1 into Register B, and finally triggering the sum via the ALU. Then I inverted the ALU signal to perform a subtraction instead of an addition.
 
 ⚙️ Part 2 – Programmed Addition
 The second video shows the CPU performing an addition fully on its own, programmed via the EEPROM. Register A loads the value 28, Register B gets 41, and the result 69 is shown. Everything happens at a slow clock speed so you can clearly see the operation step-by-step.
