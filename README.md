@@ -228,3 +228,7 @@ No matter what the instruction is, every single one starts the same way. First, 
 And remember: your Program Counter runs from 0 to 15. That means if you programmed something like JUMP 0 at address 5, the CPU won’t execute it until it actually reaches that address. Unless you tell it to jump, it will always move forward step by step.
 
 So yeah, this isn’t just about one instruction. It’s a system that you control. You're not just using a computer, you built one.
+
+
+📚 Bonus: My Personal Notes
+I’ve also left the notes I took while building the computer , in case anyone wants to check them out. They're rough, but maybe useful.
