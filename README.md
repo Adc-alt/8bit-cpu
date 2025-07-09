@@ -231,4 +231,4 @@ So yeah, this isn’t just about one instruction. It’s a system that you contr
 
 
 📚 Bonus: My Personal Notes
-I’ve also left the notes I took while building the computer , in case anyone wants to check them out. They're rough, but maybe useful.
+I’ve also left the notes (MessyNotes.pdf) I took while building the computer , in case anyone wants to check them out. They're rough, but maybe useful.
