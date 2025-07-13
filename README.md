@@ -230,5 +230,7 @@ And remember: your Program Counter runs from 0 to 15. That means if you programm
 So yeah, this isn’t just about one instruction. It’s a system that you control. You're not just using a computer, you built one.
 
 
-📚 Bonus: My Personal Notes
+📚 Bonus: My Personal Notes & Updates
 I’ve also left the notes (MessyNotes.pdf) I took while building the computer , in case anyone wants to check them out. They're rough, but maybe useful.
+
+Although there are many possible improvements for this computer ,such as adding external RAM, implementing a stack, or designing a more advanced ALU. I've decided to leave the project as it is for now. Because I’ve learned what I set out to learn: how to build a computer from scratch. Now it’s time to apply that knowledge in new directions.
