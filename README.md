@@ -114,6 +114,8 @@ In the final video, the system reaches a key milestone: it becomes Turing Comple
 
 The program sums +15 repeatedly. Once an overflow occurs and the max value is reached, a conditional jump is triggered and the system switches to subtraction mode, all based on the program logic.
 
+[🔗 Watch the demo on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7350911034125168642/)
+
 
 ## 7. Into The Rabbit Hole
 
