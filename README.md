@@ -167,11 +167,9 @@ Value 28 in binary is 00011100
 
 So you:
 
--Set the address lines to 1110.
-
--Set the data lines to 00011100.
-
--Hit the “Write” switch on the RAM.
+-Set the address lines to 1110.  
+-Set the data lines to 00011100.  
+-Hit the “Write” switch on the RAM.  
 
 Now, RAM address 14 holds the number 28. It’s there, waiting to be fetched.
 
@@ -181,8 +179,7 @@ Now the program starts running. The Program Counter at first start in 0000 but o
 
 The CPU fetches it and places it into the Instruction Register , an 8-bit register that splits it into:
 
--Opcode:  0001 → which tells the EEPROM to trigger the LOAD microcode
-
+-Opcode:  0001 → which tells the EEPROM to trigger the LOAD microcode  
 -Operand: 1110 → which tells the RAM which address to read from
 
 ### 4️⃣ What the EEPROM Does
@@ -193,33 +190,28 @@ Each bit in that control word activates a specific part of the system:
 
 One bit enables RAM to output data
 
--Another enables the bus
--Another tells Register A to load data from the bus
--This is the moment when the factory goes into motion.
+-Another enables the bus  
+-Another tells Register A to load data from the bus  
+-This is the moment when the factory goes into motion.  
 
 ### 5️⃣ Execution: The Data Travels
 In the LOAD execution step:
 
 The RAM is enabled at address 14
 
--The value 28 (00011100) is placed on the bus
-
--The A Register is enabled to receive it
+-The value 28 (00011100) is placed on the bus  
+-The A Register is enabled to receive it  
 
 And just like that, Register A now holds the number 28.
 
 ### 🧠 Recap
 So even though we started with just a simple instruction — LOAD 14 — what really happened was a beautiful chain of coordination:
 
-1-You preloaded the RAM with a value at a specific address
-
-2-The CPU fetched and decoded the instruction
-
-3-The EEPROM mapped the opcode to control signals
-
-4-The system fetched the data and stored it in Register A
-
-5-All of this took place across multiple clock cycles (T0–T4 in this case)
+1-You preloaded the RAM with a value at a specific address  
+2-The CPU fetched and decoded the instruction  
+3-The EEPROM mapped the opcode to control signals  
+4-The system fetched the data and stored it in Register A  
+5-All of this took place across multiple clock cycles (T0–T4 in this case)  
 
 
 All of this happens just for one instruction: LOAD 14. But the cool part is that you're not limited to just that, you can invent your own instructions. The EEPROM lets you define exactly what happens in each step of the instruction cycle (T0 to T7). So if you want to create an instruction that increments a register, performs a special logic operation, or jumps based on a condition, you can make it happen by setting the control signals step by step.
