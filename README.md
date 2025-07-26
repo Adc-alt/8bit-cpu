@@ -149,8 +149,7 @@ But the instruction isn’t written like that ,because remember, the computer do
 ###  1️⃣ The Instruction: 0001 1110
 This 8-bit instruction is split in two:
 
--0001 → the opcode → tells the CPU to perform a LOAD
-
+-0001 → the opcode → tells the CPU to perform a LOAD  
 -1110 → the operand → tells the CPU to go to RAM address 14
 
 0001 1110  =  LOAD from RAM[14]
